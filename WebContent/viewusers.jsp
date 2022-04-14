@@ -1,12 +1,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>View Users</title>
+<title>View Customers</title>
 </head>
 <body>
 	<%@page import="com.dao.UserDao,com.bean.*,java.util.*"%>
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-	<h1>Users List</h1>
+	<h1>Customers List</h1>
 
 	<%
 	List<User> list = UserDao.getAllRecords();
@@ -17,10 +17,10 @@
 		<tr>
 			<th>Id</th>
 			<th>Name</th>
-			<th>Password</th>
+			<th>Number</th>
 			<th>Email</th>
 			<th>Sex</th>
-			<th>Country</th>
+			<th>Type</th>
 			<th>Edit</th>
 			<th>Delete</th>
 		</tr>
@@ -28,17 +28,17 @@
 			<tr>
 				<td>${u.getId()}</td>
 				<td>${u.getName()}</td>
-				<td>${u.getPassword()}</td>
+				<td>${u.getNumber()}</td>
 				<td>${u.getEmail()}</td>
 				<td>${u.getSex()}</td>
-				<td>${u.getCountry()}</td>
+				<td>${u.getType()}</td>
 				<td><a href="editform.jsp?id=${u.getId()}">Edit</a></td>
 				<td><a href="deleteuser.jsp?id=${u.getId()}">Delete</a></td>
 			</tr>
 		</c:forEach>
 	</table>
 	<br />
-	<a href="adduserform.jsp">Add New User</a>
+	<a href="adduserform.jsp">Add New Customer</a>
 
 </body>
 </html>
