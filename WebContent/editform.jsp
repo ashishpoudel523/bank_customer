@@ -24,7 +24,10 @@ User u=UserDao.getRecordById(Integer.parseInt(id));
 		<tr><td>Type:</td><td>
 		<select name="type">
 		<option>Saving</option>
-		<option>Other</option>
+		<option>Fixed Deposit</option>
+		<option>Non Resident</option>
+		<option>Salary</option>
+		<option>Current</option>
 		</select>
 		</td></tr>
 		<tr><td colspan="2"><input type="submit" value="Edit Customer"/></td></tr>
