@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Banking Software</title>
 </head>
 <body>
 
-<a href="adduserform.jsp">Add User</a>
-<a href="viewusers.jsp">View Users</a>
+<a href="adduserform.jsp">Add Customer</a>
+<a href="viewusers.jsp">View Customers</a>
 
 </body>
 </html>

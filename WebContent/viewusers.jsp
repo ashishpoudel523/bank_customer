@@ -1,12 +1,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>View Customers</title>
+<title>View Bank Customers</title>
 </head>
 <body>
 	<%@page import="com.dao.UserDao,com.bean.*,java.util.*"%>
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-	<h1>Customers List</h1>
+	<h1>Bank Customers List</h1>
 
 	<%
 	List<User> list = UserDao.getAllRecords();
