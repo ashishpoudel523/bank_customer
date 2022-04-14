@@ -3,6 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>View Bank Customers</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<%@page import="com.dao.UserDao,com.bean.*,java.util.*"%>
@@ -14,7 +15,8 @@
 			request.setAttribute("users", list);
 	%>
 
-	<table border="1" width="90%">
+	<div class="container">
+	<table class="table table-striped table-dark" border="1" width="90%">
 		<tr>
 			<th>Id</th>
 			<th>Name</th>
@@ -38,8 +40,9 @@
 			</tr>
 		</c:forEach>
 	</table>
+	</div>
 	<br />
-	<a href="adduserform.jsp">Add New Customer</a>
+	<div class="container"><button class="btn"><a href="adduserform.jsp">Add New Customer</a></button></div>
 
 </body>
 </html>
