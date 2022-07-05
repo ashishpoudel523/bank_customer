@@ -7,7 +7,6 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
 <p>Sorry, an error occured in Bank Software!</p>
 <jsp:include page="userform.html"></jsp:include>
 
